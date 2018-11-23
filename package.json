@@ -1,0 +1,11 @@
+{
+  "name": "crm-astorian",
+  "version": "0.0.1",
+  "description": "CRM for Astorian Inc\u001b[2NC",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Florin Munteanu",
+  "license": "ISC"
+}
