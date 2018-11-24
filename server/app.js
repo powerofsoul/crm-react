@@ -6,7 +6,7 @@ const app = express()
 const router = express.Router()
 
 const url = process.env.MONGODB_URI || "mongodb://localhost:27017"
-const port = 80
+const port = 9000
 
 try {
     mongoose.connect(url)    
@@ -15,6 +15,6 @@ try {
 }
 
 routes(router)
-app.use('/', router)
+app.use('/api/', router)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
