@@ -1,5 +1,5 @@
-const project = require('./project')
+const entry = require('./entry')
 
 module.exports = (router) => {
-    project(router)
+    entry(router)
 }
