@@ -4,6 +4,7 @@ let EntrySchema = new mongoose.Schema(
     {
         project_tag: String,
         vendor: String,
+        calls:[],
         needs_follow_up: Boolean,
         reviewing:Boolean,
         intends_to_bid:Boolean,
