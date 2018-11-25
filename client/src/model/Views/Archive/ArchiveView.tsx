@@ -5,7 +5,7 @@ import { ArchiveContent } from "./ArchiveContent";
 
 export class ArchiveView extends CrmComponent{
     constructor(...props:[]) {
-        super(ArchiveSideMenu, ArchiveSideMenu, 'Archive',  ...props);
+        super(ArchiveSideMenu, ArchiveSideMenu,  ...props);
     }
 
     render(){

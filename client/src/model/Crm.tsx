@@ -3,25 +3,22 @@ import { runInThisContext } from "vm";
 import { Grid, Row, Col } from "react-bootstrap";
 
 export interface CrmView{
-    Name:string,
     SideMenu: React.ComponentClass,
     Content: React.ComponentClass
 }
 
 export class CrmComponent extends React.Component implements CrmView{
-    Name: string;    
     SideMenu: React.ComponentClass;
     Content: React.ComponentClass;
 
-    constructor(sideMenu: React.ComponentClass, content: React.ComponentClass, name:string, ...props:[]) {
+    constructor(sideMenu: React.ComponentClass, content: React.ComponentClass, ...props:[]) {
         super(props);
         this.SideMenu = sideMenu;
         this.Content = content;
-        this.Name = name;
     }
 
     render(){
-        return <Grid style={{height:"100%", width:"100%"}}>
+        return <Grid>
                   <Row>
                         <Col xs={4} style={sideMenuStyle}>
                             <this.SideMenu />

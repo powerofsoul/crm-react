@@ -5,7 +5,7 @@ import { OverViewContent } from "./OverViewContent";
 
 export class OverView extends CrmComponent{
     constructor(...props:[]) {
-        super(OverViewSideMenu, OverViewSideMenu, 'OverView',  ...props);
+        super(OverViewSideMenu, OverViewContent,  ...props);
     }
 
     render(){

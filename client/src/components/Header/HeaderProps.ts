@@ -1,3 +1,6 @@
+import { CrmComponent } from "../../model/Crm";
+
 export interface HeaderProps {
-    LastModifiedDate: Date
+    LastModifiedDate: Date,
+    CrmViewsName : string[]
 }

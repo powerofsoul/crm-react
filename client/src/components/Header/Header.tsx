@@ -13,9 +13,9 @@ export class Header extends React.Component<HeaderProps, {}> {
                 <Col xs={6}>
                     <label>Viewing</label>
                     <div>
-                        <Button style={buttonStyle}>CRM</Button>
-                        <Button style={buttonStyle}>Overview</Button>
-                        <Button style={buttonStyle}>Archive</Button>
+                        {this.props.CrmViewsName.map((name) => {     
+                            return (<Button style={buttonStyle}>{name}</Button>)
+                        })}
                     </div>
                 </Col>
                 <Col style={{position:"relative", bottom:0}} xs={3}>
