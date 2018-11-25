@@ -1,9 +1,6 @@
 import * as React from "react";
 import { Grid, Row, Col, Button } from 'react-bootstrap';
-
-export interface HeaderProps {
-    LastModifiedDate: Date
-}
+import { HeaderProps } from "./HeaderProps";
 
 export class Header extends React.Component<HeaderProps, {}> {
     render() {

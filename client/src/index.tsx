@@ -1,28 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { Header } from "./components/Header";
-
-class Syncronyzer {
-    LastModifiedDate = new Date();
-    RefreshRate:number;
-
-    constructor(refreshRate:number){
-        this.RefreshRate = refreshRate;
-    }
-
-    public start() {
-        setTimeout(() => {
-           this.LastModifiedDate = new Date();
-           this.start();
-        }, this.RefreshRate);
-    }
-}
-
-var sync = new Syncronyzer(100);
-sync.start();
+import { Header } from "./components/Header/Header";
+import { Body } from "./components/Body/Body";
+import { Container } from "react-bootstrap/lib/Tab";
 
 ReactDOM.render(
-    <Header LastModifiedDate = {sync.LastModifiedDate}/>,
+    <div>
+        <Header LastModifiedDate = {new Date()}/>
+        <Body />
+    </div>,
     document.getElementById("container")
 );
